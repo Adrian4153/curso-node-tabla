@@ -4,14 +4,12 @@ const argv = require('yargs')
     type: 'number',
     demandOption: true,
     describe: 'Es la base de la tabla de multiplicar',
-  },
-    'l', {
+  }).option('l', {
     alias: 'listar',
     type: 'boolean',
     default: false,
     describe: 'Muestra la tabla en consola'
-  },
-    'h', {
+  }).option('h', {
     alias: 'hasta',
     type: 'number',
     demandOption: false,
